@@ -1,0 +1,65 @@
+@import "bourbon/bourbon";
+
+*, 
+*::before, 
+*::after {
+  @include box-sizing(border-box);
+}
+
+
+
+html, 
+body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  @include clearfix;
+/*  // Code goes here*/
+  margin-left: 10%;
+  clear: both;
+  padding: 0px 20px 0px 0px;
+}
+
+
+/*[class*='col-'] {
+  padding-right: 20px;
+}*/
+[class*='col-']{
+  margin-top: 20px;
+}
+
+.col-half {
+/*  // Code goes here*/
+  background-color: blue;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  width: 480px;
+  height: 100px;
+}
+
+.col-third {
+/*  // Code goes here*/
+  background-color: red;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 20px;
+/*  margin-bottom: 20px;*/
+  width: 312px;
+  height: 100px;
+}
+
+.col-fourth {
+/*  // Code goes here*/
+  background-color: yellow;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 20px;
+/*  margin-bottom: 20px;*/
+  width: 228px;
+  height: 100px;
+}
