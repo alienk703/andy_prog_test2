@@ -28,9 +28,18 @@ body {
   margin-top: 20px;
 }
 
+/* COULDNT GET MIXIN TO WORK */
+@mixin margins {
+  display: inline-block;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
 .col-half {
 /*  // Code goes here*/
   background-color: blue;
+/* COULDNT GET MIXIN TO WORK */
+  @include margins;
   display: inline-block;
   margin-right: 20px;
   margin-bottom: 20px;
@@ -41,6 +50,7 @@ body {
 .col-third {
 /*  // Code goes here*/
   background-color: red;
+  @include margins;
   display: inline-block;
   margin-right: 20px;
   margin-bottom: 20px;
@@ -51,9 +61,18 @@ body {
 .col-fourth {
 /*  // Code goes here*/
   background-color: yellow;
+  @include margins;
   display: inline-block;
   margin-right: 20px;
   margin-bottom: 20px;
   height: 100px;
   width: 23.1%;
+}
+
+
+@media (max-width: 960px) {
+  .col-half, .col-third, .col-fourth {
+    display: block;
+    width: 100%;
+  }
 }
