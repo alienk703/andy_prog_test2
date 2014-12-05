@@ -6,8 +6,6 @@
   @include box-sizing(border-box);
 }
 
-
-
 html, 
 body {
   margin: 0;
@@ -18,13 +16,10 @@ body {
 .container {
   @include clearfix;
 /*  // Code goes here*/
-
   clear: both;
-/*  padding: 0px 20px 0px 0px;*/
   max-width: 960px;
   margin: 0 auto;
 }
-
 
 [class*='col-']:last-of-type {
   margin-right: 0;
@@ -39,28 +34,26 @@ body {
   display: inline-block;
   margin-right: 20px;
   margin-bottom: 20px;
-  width: 48.7%;
   height: 100px;
+  width: 48.7%;
 }
 
 .col-third {
 /*  // Code goes here*/
   background-color: red;
   display: inline-block;
-  vertical-align: middle;
   margin-right: 20px;
   margin-bottom: 20px;
-  width: 31.6%;
   height: 100px;
+  width: 31.6%;
 }
 
 .col-fourth {
 /*  // Code goes here*/
   background-color: yellow;
   display: inline-block;
-  vertical-align: middle;
   margin-right: 20px;
   margin-bottom: 20px;
-  width: 23.1%;
   height: 100px;
+  width: 23.1%;
 }
